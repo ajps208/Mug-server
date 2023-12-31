@@ -9,15 +9,15 @@ exports.addOrders = async (req, res) => {
     whatsapp,
     email,
     address,
+    thickness,
     size,
-    style,
-    color,
+    wallmount,
     qty,
     message,
     price
 
   } = req.body;
-  const mugsize=`${size} ml`
+  
   const userId = req.payload;
   const image = req.file.filename;
   const date = new Date();
@@ -30,9 +30,9 @@ exports.addOrders = async (req, res) => {
         whatsapp,
         email,
         address,
-        size:mugsize,
-        style,
-        color,
+        thickness,
+        size,
+        wallmount,
         qty,
         message,
         image,

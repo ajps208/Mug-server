@@ -20,17 +20,17 @@ const orderSchema=new mongoose.Schema({
         type:String,
         required:true
     },
+    thickness:{
+        type:String,
+        required:true
+
+    },
     size:{
         type:String,
         required:true
 
     },
-    style:{
-        type:String,
-        required:true
-
-    },
-    color:{
+    wallmount:{
         type:String,
         required:true
 
